@@ -4,6 +4,14 @@ body{
     letter-spacing: 1px;
 }
 
+.clear{
+    clear: both;
+}
+
+h1,h2{
+    font-weight: normal;
+}
+
 #container{
     width: 90%;
     max-width: 960px;
@@ -35,4 +43,34 @@ body{
 #page-banner{
     background: #eee;
     padding: 10px 0;
+}
+
+#book-list h2{
+    float: left;
+}
+
+#book-list{
+    margin: 30px;
+}
+#book-list li{
+    padding: 20px;
+    border-right: 5px solid #ddd;
+    margin: 20px 10px;
+}
+
+
+.name{
+    float: right;
+}
+
+.delete{
+    float: left;
+    background: #9361bf;
+    padding: 6px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+}
+.delete:hover{
+    background: #333;
 }
