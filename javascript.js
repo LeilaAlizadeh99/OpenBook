@@ -3,6 +3,7 @@ const heading = document.querySelectorAll('.title')[1];
 const ul = document.querySelector('ul');
 const link = document.querySelector('.button');
 const inputText = document.querySelector('#add-book input');
+const inputSearch = document.querySelector('#search-books input');
 
 const spanDelete = `<span class="delete">Delete</span>`;
 
@@ -43,6 +44,16 @@ checkBox.addEventListener('change', function(e){
     }
 })
 
+
+inputSearch.addEventListener('keyup' , function(){
+    for(let book of ul.children){
+        if(book.firstElementChild.textContent.indexOf(inputSearch.value) !==-1){
+            book.style.display = 'block';
+        } else{
+            book.style.display = 'none';
+        }
+    }
+})
 
 
 document.addEventListener('DOMContentLoaded' , function(e){
